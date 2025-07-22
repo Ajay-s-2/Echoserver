@@ -1,0 +1,21 @@
+echo_server_project/
+│
+├── server.py           # Full-featured Echo Server (multi-client, authentication, logging)
+├── client.py           # Client program to connect and chat with server
+├── users.txt           # Stores usernames and passwords (e.g., alice:pass123)
+│
+├── logs/               # Contains general chat logs with timestamps
+│   └── chatlog.txt     # Central log file for all messages
+│
+├── history/            # Stores chat history for each individual user
+│   ├── alice.txt
+│   ├── bob.txt
+│   └── ...
+│
+└── README.md           # Project overview, setup instructions, and usage guide
+
+✅ Notes:
+logs/chatlog.txt is created automatically if it doesn't exist.
+history/<username>.txt is created when a user sends messages.
+
+You must manually create the users.txt file with usernames and passwords.
